@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поздрав за Баба Марта</title>
+	<style>
+	body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+            background-image: linear-gradient(to right, #ffcccc, #ffffff);
+            animation: backgroundAnimation 5s infinite alternate;
+        }
+
+        @keyframes backgroundAnimation {
+            0% { background-color: #ffcccc; }
+            100% { background-color: #ffffff; }
+        }
+
+        h1 {
+            color: #c0392b;
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            animation: bounce 1s infinite alternate;
+        }
+
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
+        }
+
+        .message {
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 2px solid #c0392b;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1s ease-in-out;
+            font-size: 1.5em;
+            color: #c0392b;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .martenitsa {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: #c0392b;
+            border-radius: 50%;
+            position: relative;
+            margin: 20px;
+            animation: spin 3s infinite linear;
+        }
+
+        .martenitsa::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 1.2em;
+            color: #c0392b;
+        }
+	</style>
+</head>
+<body>
+    <h1>Честита Баба Марта!</h1>
+    <div class="message">
+        Нека Баба Марта Ви донесе здраве, късмет и много усмивки!<br>
+        Носете мартеници и се радвайте на пролетта!
+    </div>
+    <div class="martenitsa"></div>
+    <div class="footer">С любов от нас - Web DEV TEAM!</div>
+</body>
+</html>
